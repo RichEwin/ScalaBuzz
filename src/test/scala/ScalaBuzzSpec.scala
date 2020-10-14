@@ -12,13 +12,16 @@ class ScalaBuzzSpec extends AnyFlatSpec with should.Matchers {
 
   "ScalaBuzz" should "return Fizz for multiples of 3" in {
     ScalaBuzz.evaluate(3) should be("Fizz")
+    ScalaBuzz.evaluate(6) should be("Fizz")
   }
 
   "ScalaBuzz" should "return Buzz for multiples of 5" in {
     ScalaBuzz.evaluate(5) should be("Buzz")
+    ScalaBuzz.evaluate(10) should be("Buzz")
   }
 
   "ScalaBuzz" should "return FizzBuzz for multiples of 3 & 5" in {
     ScalaBuzz.evaluate(15) should be("FizzBuzz")
+    ScalaBuzz.evaluate(30) should be("FizzBuzz")
   }
 }

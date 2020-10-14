@@ -1,5 +1,9 @@
 case class ScalaBuzz() {
   def evaluate(n: Int): String = {
-    n.toString
+    if (n % 3 == 0) {
+      "Fizz"
+    } else {
+      n.toString
+    }
   }
 }

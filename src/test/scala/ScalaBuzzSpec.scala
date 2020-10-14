@@ -18,4 +18,9 @@ class ScalaBuzzSpec extends AnyFlatSpec with should.Matchers {
     var ScalaBuzz = new ScalaBuzz
     ScalaBuzz.evaluate(5) should be("Buzz")
   }
+
+  "ScalaBuzz" should "return FizzBuzz for multiples of 3 & 5" in {
+    var ScalaBuzz = new ScalaBuzz
+    ScalaBuzz.evaluate(15) should be("FizzBuzz")
+  }
 }
